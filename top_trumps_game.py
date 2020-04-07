@@ -24,7 +24,7 @@ def random_pokemon():
         'forms': pokemon['forms'],
         'moves': pokemon['moves'],
 
-    }
+}
 
 def computer_pokemon():
     computer_pokemon = random.randint(1, 151)
@@ -41,11 +41,13 @@ def computer_pokemon():
             'forms': pokemon['forms'],
             'moves': pokemon['moves'],
 
-        }
+}
 
 def play():
 
-    computer_pokemon = random_pokemon
+    computer_stat: ['object']
+    random_pokemon_stat = [random_pokemon['stat_choice'],
+    computer_stat[object] == [computer_pokemon['stat_choice']
 
     print('You have been given the following pokemon card'.format ['random_pokemon'])
 
@@ -53,10 +55,7 @@ def play():
 
     print('The computer has chosen {}'.format(computer_pokemon['name']))
 
-    computer_stat: ['object']
-    random_pokemon_stat = [random_pokemon['stat_choice'],
-    computer_stat [object] = [computer_pokemon['stat_choice'],
-    print('Your opponent has chosen {}'.format(computer_pokemon['name']))
+    
 
     if computer_stat > random_pokemon_stat:
         print('You Lose!')
