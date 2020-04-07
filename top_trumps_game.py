@@ -11,7 +11,7 @@ import requests
 
 def random_pokemon():
     random_pokemon = random.randint(1, 151)
-    url = 'https://pokeapi.co/'.format(random_pokemon)
+    url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(random_pokemon)
     response = requests.get(url)
     pokemon = response.json()
 
@@ -28,7 +28,7 @@ def random_pokemon():
 
 def computer_pokemon():
     computer_pokemon = random.randint(1, 151)
-    url = 'https://pokeapi.co/'.format(computer_pokemon)
+    url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(computer_pokemon)
     response = requests.get(url)
     pokemon = response.json()
 
@@ -48,7 +48,8 @@ def play():
     computer_pokemon = random_pokemon
 
     print('You have been given the following pokemon card'.format ['random_pokemon'])
-
+    print('Which stat would you like to use? (number, ability, height, weight, forms, moves)')
+    
     computer_stat: ['object']
     random_pokemon_stat = [random_pokemon['stat_choice'],
     computer_stat [object] = [computer_pokemon['stat_choice'],
